@@ -1,4 +1,6 @@
-from pyteal import Seq, App, Txn, Return, Int, Gtxn, TxnType, Bytes, If, And, Global, Cond, OnComplete, Addr,Assert, AssetHolding
+# from pyteal import Seq, App, Txn, Return, Int, Gtxn, TxnType, Bytes, If, And, Global, Cond, OnComplete, Addr,Assert, AssetHolding
+from pyteal import *
+
 
 def withdrawal_approval():
     on_creation = Seq([

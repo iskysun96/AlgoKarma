@@ -1,8 +1,5 @@
-from pyteal import Seq, App, Txn, Return, Int, Gtxn, TxnType, Bytes, If, And, Global, Cond, OnComplete, Addr,Assert, AssetHolding
-
-#Add logic to a Stateless Smart Contract that requires two transactions be submitted 
-# at the same time (Atomic Transfer) and verify the first is an application call to the 
-# Stateful Smart Contract deployed in the previous step.
+# from pyteal import Seq, App, Txn, Return, Int, Gtxn, TxnType, Bytes, If, And, Global, Cond, OnComplete, Addr,Assert, AssetHolding
+from pyteal import *
 
 def withdrawal_escrow(app_id, asa_id):
     Fee = Int(1000)
